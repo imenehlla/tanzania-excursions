@@ -1,7 +1,11 @@
 package com.imene.excursions.model;
 
+import com.imene.excursions.exception.ConditionNotMetException;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
+
+
 
 public abstract class Excursion {
 
@@ -87,10 +91,12 @@ public abstract class Excursion {
         return participantCount >= minParticipants;
     }
 
+    // La date du jour est passée en paramètre pour pouvoir tester la méthode avec une date fixe
     public boolean isPast(LocalDate today) {
         return date.isBefore(today);
     }
 
+    // Protection en plus, les vérifications principales sont faites dans le service
     public void addParticipant() {
         if (cancelled) {
             throw new IllegalStateException("Impossible d'ajouter un participant : l'excursion " + id + " est annulée");
@@ -111,6 +117,14 @@ public abstract class Excursion {
     public void cancel() {
         cancelled = true;
     }
+
+    public abstract void checkEligibility(Customer customer) throws ConditionNotMetException;
+
+    public abstract double calculatePrice(Customer customer);
+
+    public abstract List<Inclusion> getInclusions();
+
+
 
     @Override
     public boolean equals(Object obj) {
