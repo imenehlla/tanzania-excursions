@@ -1,11 +1,11 @@
 type,id,name,date,basePrice,minParticipants,maxParticipants,extra
-HIKE,EXC01,Journée sur le Kilimandjaro,2026-11-20,180.0,2,8,ADVANCED
-HIKE,EXC02,Cascades de Materuni,2026-11-18,35.0,1,12,BEGINNER
-HIKE,EXC03,Randonnée au pied du mont Meru,2026-11-25,60.0,2,10,INTERMEDIATE
-HIKE,EXC04,Cascades de Materuni,2026-12-02,35.0,1,12,BEGINNER
-SAFARI,EXC05,Safari à Tarangire,2026-11-19,150.0,2,6,60.0
-SAFARI,EXC06,Safari au cratère du Ngorongoro,2026-11-22,200.0,2,6,70.0
-SAFARI,EXC07,Safari au lac Manyara,2026-11-27,140.0,2,6,60.0
-CITY_TOUR,EXC08,Visite d'Arusha,2026-11-18,40.0,1,15,
-CITY_TOUR,EXC09,Visite de Moshi,2026-11-21,35.0,3,15,
+HIKE,EXC01,Journée sur le Kilimandjaro,2027-07-20,180.0,2,8,ADVANCED
+HIKE,EXC02,Cascades de Materuni,2027-07-18,35.0,1,12,BEGINNER
+HIKE,EXC03,Randonnée au pied du mont Meru,2027-07-25,60.0,2,10,INTERMEDIATE
+HIKE,EXC04,Cascades de Materuni,2027-08-02,35.0,1,12,BEGINNER
+SAFARI,EXC05,Safari à Tarangire,2027-07-19,150.0,2,6,60.0
+SAFARI,EXC06,Safari au cratère du Ngorongoro,2027-07-22,200.0,2,6,70.0
+SAFARI,EXC07,Safari au lac Manyara,2027-07-27,140.0,2,6,60.0
+CITY_TOUR,EXC08,Visite d'Arusha,2027-07-18,40.0,1,15,
+CITY_TOUR,EXC09,Visite de Moshi,2027-07-21,35.0,3,15,
 CITY_TOUR,EXC10,Visite d'Arusha,2026-10-15,40.0,1,15,
