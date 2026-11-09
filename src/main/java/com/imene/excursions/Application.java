@@ -29,7 +29,7 @@ public class Application {
             excursions = dataLoader.loadExcursions();
             customers = dataLoader.loadCustomers();
         } catch (IOException e) {
-            System.out.println("Impossible de lire les fichiers de données : " + e.getMessage());
+            System.out.println("Fichier de données introuvable ou illisible : " + e.getMessage());
             return;
         }
 
