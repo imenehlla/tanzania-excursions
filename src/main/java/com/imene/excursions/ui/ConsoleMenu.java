@@ -140,7 +140,7 @@ public class ConsoleMenu {
     private void checkMinimumParticipants() {
         List<Excursion> cancelled = reservationService.cancelExcursionsWithoutEnoughParticipants(today);
         if (cancelled.isEmpty()) {
-            System.out.println("Toutes les excursions des 2 prochains jours ont assez de participants.");
+            System.out.println("Aucune excursion à annuler dans les 2 prochains jours.");
             return;
         }
         for (Excursion excursion : cancelled) {
@@ -152,6 +152,7 @@ public class ConsoleMenu {
 
     private Optional<Customer> askCustomer() {
         System.out.print("Identifiant du client : ");
+        // En majuscules pour accepter "cus01" comme "CUS01"
         String id = scanner.nextLine().trim().toUpperCase();
         Optional<Customer> customer = customerService.findById(id);
         if (customer.isEmpty()) {
