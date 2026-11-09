@@ -5,6 +5,7 @@ Projet final de POO Java – M1 JUNIA – Imène HOULLA
 ## Objectif
 
 Application console qui gère les réservations d'une petite agence d'excursions guidées autour d'Arusha et Moshi, en Tanzanie. J'ai choisi ce sujet après un volontariat de deux mois dans une école en Tanzanie, pendant lequel j'ai fait plusieurs de ces excursions. Les lieux, les prestations et les règles de l'application s'inspirent de ce que j'ai vu sur place.
+
 L'agence propose trois types d'excursions : des randonnées (Kilimandjaro, cascades de Materuni, mont Meru), des safaris (Tarangire, Ngorongoro, lac Manyara) et des visites de ville (Arusha, Moshi).
 
 ## Lancer l'application
